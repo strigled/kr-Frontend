@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>простой чат-бот</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h3>Чат-бот</h3>
+            <button id="clear-chat" class="clear-btn">Очистить чат</button>
+        </div>
+        <div id="chat-messages" class="chat-messages">
+            <div class="message bot-message">
+                <img src="/static/bot.png" alt="Бот" class="message-avatar">
+                <div class="message-text">Привет, я - простой бот! спроси меня о чем-нибудь</div>
+            </div>
+        </div>
+        <div class="typing-indicator" id="typing-indicator">
+            <img src="/static/bot.png" alt="Бот" class="message-avatar">
+            <div class="typing-text">Бот печатает...</div>
+        </div>
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="Введите любое сообщение...">
+            <button id="send-button">Отправить</button>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
